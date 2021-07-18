@@ -5,29 +5,29 @@
 class Concom < Formula
   desc "An easy solution to use conventional commits from your command line on any kind of project."
   homepage "https://github.com/Makepad-fr/concom"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "669d62aed5ea9c82ccad4e18f953088ee1e768fcf2927acab98e86aec4abf34c"
+      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.2/concom_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "9792a1e8f8a61e40e71d4f841d32a05efe7fc4f16f9d7e15cb4e4a74f7312452"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "d30f7f9ae539b31fa37cc29972c10a72e7832fa44d34970a4aab87b3c0cb85b3"
+      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.2/concom_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "522dfa6c9115bfbb48e03f2dbb76dcd8dd82a45ba592ac74d4f6f4ac591674ff"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "08ebe4a9226a21d769f932a87c85e000f169622d643fe492146218e417f3d93f"
+      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.2/concom_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "7b22ec99f1703695e9c9a5f0a50b1831a32052ba9bc7ef2914602538f89653d2"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Linux_arm64.tar.gz"
-      sha256 "2dcb34aeaa2279310a79458542a7d78d7f7ce514c527bd0ec3f1f47d6211ee0a"
+      url "https://github.com/Makepad-fr/concom/releases/download/v0.0.2/concom_0.0.2_Linux_arm64.tar.gz"
+      sha256 "bb436ce41118422fd3bf96a1a549932a189afb7132a6a9d09e6bc650864bc369"
     end
   end
 
