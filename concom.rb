@@ -12,22 +12,22 @@ class Concom < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "0a74bdc1ba889467b266c423bdb516d81cadddb688abc00c490f215e94cfb3c2"
+      sha256 "669d62aed5ea9c82ccad4e18f953088ee1e768fcf2927acab98e86aec4abf34c"
     end
     if Hardware::CPU.arm?
       url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "2c35c38fe5270a805a24aa796ab5f520fcad7b1b0c32649a444b249ce2e75f30"
+      sha256 "d30f7f9ae539b31fa37cc29972c10a72e7832fa44d34970a4aab87b3c0cb85b3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "2815ae1c3f4fa197e4ab55ba189c80e8c85163d8eecad549ad52b986def16952"
+      sha256 "08ebe4a9226a21d769f932a87c85e000f169622d643fe492146218e417f3d93f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Makepad-fr/concom/releases/download/v0.0.1/concom_0.0.1_Linux_arm64.tar.gz"
-      sha256 "30d0d0764816c3e885e72e76d3f252bdbeba88a109a527875b314b87f4758c8c"
+      sha256 "2dcb34aeaa2279310a79458542a7d78d7f7ce514c527bd0ec3f1f47d6211ee0a"
     end
   end
 
